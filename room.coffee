@@ -1,12 +1,12 @@
-r = 30
+r = 10
 [x0, y0] = [300, 600]
 [Vx0, Vy0] = [7, 12]
 
 wall_length0 = 280
 wall_thickness0 = 5
 
-width = window.innerWidth - 20
-height = window.innerHeight - 20
+width = window.innerWidth - 15
+height = window.innerHeight - 130
 
 canvas = document.createElement("canvas")
 canvas.width = width
@@ -39,9 +39,9 @@ Ball = (x, y, Vx, Vy, radius=r, color='#000000') ->
   @mass = @radius
 
 random_ball = ->
-  new Ball(random_int(100, width - 100), random_int(100, height - 100), random_int(5, 15), random_int(5, 15), r, random_hex_color())
+  new Ball(random_int(100, width - 200), random_int(100, height - 200), random_int(5, 10), random_int(5, 10), r, random_hex_color())
 
-random_balls = (n=3) ->
+random_balls = (n=2) ->
   random_ball() for [1..n]
 
 Wall = (x, y, wall_width, wall_height) ->
@@ -54,17 +54,14 @@ Wall::render = ->
   context.fillStyle = "#000000"
   context.fillRect @x, @y, @width, @height
 
-random_vert_wall = -> new Wall(random_int(100, width - 100), random_int(100, height - 100), wall_thickness0, random_int(100, 300))
+random_vert_wall = -> new Wall(random_int(100, width - 200), random_int(100, height - 200), wall_thickness0, random_int(100, 300))
 
-random_hor_wall = -> new Wall(random_int(100, width - 100), random_int(100, height - 100), random_int(100, 300), wall_thickness0)
+random_hor_wall = -> new Wall(random_int(100, width - 200), random_int(100, height - 200), random_int(100, 300), wall_thickness0)
 
-random_walls = (nHor=5, nVert=5) ->
+random_walls = (nHor=2, nVert=2) ->
   verts = (random_vert_wall() for [1..nVert])
   hors = (random_hor_wall() for [1..nHor])
   hors.concat verts
-
-all_balls = random_balls(5)
-all_walls = random_walls(2,2)
 
 check_balls_collision = (B1, B2) ->
   dx = B1.x - B2.x
@@ -140,32 +137,56 @@ Ball::update = ->
   @check_sides_collision()
   @check_walls_collision(all_walls)
 
+context.fillStyle = "#008800"
+context.fillRect(0, 0, width, height)
+
 render = ->
   context.fillStyle = "#008800"
   context.fillRect(0, 0, width, height)
   ball.render() for ball in all_balls
   wall.render() for wall in all_walls
 
-update = ->
-  i = 0
-  while i < all_balls.length
-    all_balls[i].update()
-    j = i + 1
-    while j < all_balls.length
-      check_balls_collision(all_balls[i],all_balls[j])
-      j++
-    i++
+paused = no
 
+update = ->
+  if not paused
+    i = 0
+    while i < all_balls.length
+      all_balls[i].update()
+      j = i + 1
+      while j < all_balls.length
+        check_balls_collision(all_balls[i],all_balls[j])
+        j++
+      i++
+
+
+
+all_balls = []
+all_walls = []
+
+init_balls = ->
+  all_balls = all_balls.concat random_balls()
+  ball.render() for ball in all_balls
+
+init_walls = ->
+  all_walls = all_walls.concat random_walls()
+  wall.render() for wall in all_walls
 
 animate = window.requestAnimationFrame or window.webkitRequestAnimationFrame or window.mozRequestAnimationFrame or (callback) ->
-  window.setTimeout callback, 1000
+  window.setTimeout callback, 100 / 60
 
 window.onload = ->
   document.body.appendChild canvas
-  animate step
+  document.getElementById('addRndWallsBtn').onclick = ->
+    init_walls()
+  document.getElementById('addRndBallsBtn').onclick = ->
+    init_balls()
+  document.getElementById('startBtn').onclick = ->
+    animate step
+  document.getElementById('pauseBtn').onclick = ->
+    paused = not paused
 
 step = ->
   update()
   render()
   animate step
-

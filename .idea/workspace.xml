@@ -22,22 +22,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="room.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/room.js">
+      <file leaf-file-name="aroom.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aroom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="5256">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="450">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aroom.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aroom.html">
+      <file leaf-file-name="room.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/room.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13548388" vertical-offset="0" max-vertical-offset="930">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.84639496" vertical-offset="2538" max-vertical-offset="3564">
+              <caret line="186" column="4" selection-start-line="186" selection-start-column="4" selection-end-line="186" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="room.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/room.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1062">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="room.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/room.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1062" max-vertical-offset="5994">
+              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding>
+                <marker date="1415618550377" expanded="true" signature="4156:5203" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="5297:6009" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="5270:5392" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="5422:5492" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="5514:5758" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="5789:5967" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="6109:7165" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="6131:7083" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="6474:6599" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="6969:6995" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="7000:7059" placeholder="{...}" />
+                <marker date="1415618550377" expanded="true" signature="7713:8055" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +93,10 @@
         <option value="$PROJECT_DIR$/collision.coffee" />
         <option value="$PROJECT_DIR$/room_test.coffee" />
         <option value="$PROJECT_DIR$/room00.coffee" />
-        <option value="$PROJECT_DIR$/room.coffee" />
+        <option value="$PROJECT_DIR$/room.css" />
+        <option value="$PROJECT_DIR$/kineticjs.js" />
         <option value="$PROJECT_DIR$/aroom.html" />
+        <option value="$PROJECT_DIR$/room.coffee" />
       </list>
     </option>
   </component>
@@ -245,26 +280,57 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/room.coffee">
+    <entry file="file://$PROJECT_DIR$/room.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28526646" vertical-offset="2157" max-vertical-offset="3186">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1062" max-vertical-offset="5994">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <marker date="1415618550377" expanded="true" signature="4156:5203" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="5297:6009" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="5270:5392" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="5422:5492" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="5514:5758" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="5789:5967" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="6109:7165" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="6131:7083" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="6474:6599" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="6969:6995" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="7000:7059" placeholder="{...}" />
+            <marker date="1415618550377" expanded="true" signature="7713:8055" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/room.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1062">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/room.js">
+    <entry file="file://$PROJECT_DIR$/kineticjs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2106" max-vertical-offset="4212">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.076271184" vertical-offset="0" max-vertical-offset="944">
+          <caret line="4" column="19179" selection-start-line="4" selection-start-column="19179" selection-end-line="4" selection-end-column="19179" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aroom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13548388" vertical-offset="0" max-vertical-offset="930">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="450">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/room.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84639496" vertical-offset="2538" max-vertical-offset="3564">
+          <caret line="186" column="4" selection-start-line="186" selection-start-column="4" selection-end-line="186" selection-end-column="4" />
           <folding />
         </state>
       </provider>
